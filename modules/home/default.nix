@@ -31,5 +31,6 @@
     ./xdg-mimes.nix                   # xdg config
     ./zsh                             # shell
     ./protonmail.nix		      # mail app
+    ./obsidian.nix                    # APP de prise de note
   ];
 }

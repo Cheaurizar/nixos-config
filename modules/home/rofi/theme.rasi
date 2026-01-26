@@ -10,4 +10,5 @@
     highlight: @green;
     element-bg: #212323;
     element-alternate-bg: #242526;
+    red: #FF0000;
 }

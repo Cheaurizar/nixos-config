@@ -43,7 +43,7 @@ inputbar {
 }
 
 prompt {
-    background-color: @green;
+    background-color: @red;
     padding: 4px;
     text-color: @bg-col-light;
     margin: 10px 0px 10px 10px;
@@ -105,5 +105,5 @@ button {
 
 button selected {
     background-color: @bg-col;
-    text-color: @green;
+    text-color: @red;
 }
