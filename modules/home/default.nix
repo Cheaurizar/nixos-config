@@ -16,7 +16,6 @@
     ./lazygit.nix
     ./nemo.nix                        # file manager
     ./nvim.nix                        # neovim editor
-    ./obsidian.nix
     ./packages                        # other packages
     ./rofi/rofi.nix                   # launcher
     ./../../scripts/scripts.nix       # personal scripts
@@ -32,5 +31,6 @@
     ./zsh                             # shell
     ./protonmail.nix		      # mail app
     ./obsidian.nix                    # APP de prise de note
+    ./virtualbox.nix                  # Pour créer des VM
   ];
 }
