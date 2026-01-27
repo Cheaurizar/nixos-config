@@ -1,5 +1,10 @@
 { pkgs, username, ... }:
 {
+  virtualisation.virtualbox.host = { # virtualbox
+    enable = true;
+    enableKvm = true;
+    addNetworkInterface = false;
+  };
   # Add user to libvirtd group
   users.users.${username}.extraGroups = [ "libvirtd" ];
 
