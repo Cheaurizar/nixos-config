@@ -31,6 +31,6 @@
     ./zsh                             # shell
     ./protonmail.nix		      # mail app
     ./obsidian.nix                    # APP de prise de note
-    ./virtualbox.nix                  # Pour créer des VM
+    ./okular.nix
   ];
 }

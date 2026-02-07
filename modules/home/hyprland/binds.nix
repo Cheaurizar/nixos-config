@@ -12,7 +12,7 @@
 
       # keybindings
       "$mod, Return, exec, kitty"
-      "ALT, Return, exec, [float; size 1111 700] kitty"
+      "ALT, Return, exec, [float; size 1111 700] kitty" #peut être enlevé celui ci
       "$mod SHIFT, Return, exec, [fullscreen] kitty"
       "$mod, Q, killactive,"
       "$mod, F, fullscreen, 0"
