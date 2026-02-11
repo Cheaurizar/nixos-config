@@ -32,5 +32,6 @@
     ./protonmail.nix		      # mail app
     ./obsidian.nix                    # APP de prise de note
     ./okular.nix
+    ./celeste.nix
   ];
 }
