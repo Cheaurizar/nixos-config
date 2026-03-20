@@ -34,9 +34,42 @@ in
     }
 
     window#waybar {
-      background: ${background_1};
-      border-bottom: 1px solid ${border_color};
+      background-color: transparent;
+      border-bottom: 0;
+      color: @text;
+      transition: background-color 0.5s;
     }
+    
+    window#waybar.hidden {
+      opacity: 0.2;
+    }
+
+    window#waybar.empty #window {
+      background-color: transparent;
+    }
+
+    
+    /* configuring the modules */
+    .modules-left {
+        margin: 10px 0 0 10px;
+        padding: 0 0 0 7px;
+        background-color: @background;
+        border: 2px solid @focused;
+}
+
+    .modules-center {
+        margin: 10px 0 0 0;
+        padding: 0 10px 0 10px;
+        background-color: @background;
+        border: 2px solid @focused;
+}
+
+    .modules-right {
+        margin: 10px 10px 0 0;
+        padding: 0 10px 0 10px;
+        background-color: @background;
+        border: 2px solid @focused;
+}
 
     tooltip {
       background: ${background_1};
