@@ -21,120 +21,119 @@ let
   };
 in
 {
-  programs.waybar.style = with custom; ''
-    * {
-      border: none;
-      border-radius: 0px;
-      padding: 0;
-      margin: 0;
-      font-family: ${font};
-      font-weight: ${font_weight};
-      opacity: ${opacity};
-      font-size: ${font_size};
-    }
+    programs.waybar.style = with custom; ''
+        /* ╔════════════════════════╗
+           ║     Waybar Styling     ║
+           ╚════════════════════════╝ */
+        * {
+            font-family:
+            "JetBrainsMono Nerd Font", "Font Awesome 7 Free", "Roboto", "Helvetica",
+            "Arial", "sans-serif", "Noto Sans CJK JP";
+            font-size: 18px;
+        }
 
-    window#waybar {
-      background-color: transparent;
-      border-bottom: 0;
-      color: @text;
-      transition: background-color 0.5s;
-    }
-    
-    window#waybar.hidden {
-      opacity: 0.2;
-    }
+        window#waybar {
+            color: #ff003c;
+            background-color: rgba(0, 0, 0, 0);
+            border-radius: 15px;
+            transition-property: background-color;
+            transition-duration: 0.5s;
+        }
 
-    window#waybar.empty #window {
-      background-color: transparent;
-    }
+        .modules-left,
+        .modules-center,
+        .modules-right{
+            background-color: rgba(8, 8, 8, 0.75);
+            border-radius: 15px;
+        }
+        button {
+            box-shadow: inset 0 -3px transparent;
+            border: none;
+            border-radius: 0;
+        }
+        button:hover {
+            background: inherit;
+            box-shadow: inset 0 -3px #fcee09;
+        }
+        
+        /* ╔═════════════════════════════╗
+           ║     Module Element Colors   ║
+           ╚═════════════════════════════╝ */
+            
+        #clock,
+        #language,
+        #window,
+        #workspaces,
+        #battery,
+        #battery.charging,
+        #pulseaudio,
+        #pulseaudio.muted,
+        #custom-notification {
+            padding: 0 10px;
+            color: #ff003c;
+            background-color: transparent;
+        }
 
-    
-    /* configuring the modules */
-    .modules-left {
-        margin: 10px 0 0 10px;
-        padding: 0 0 0 7px;
-        background-color: @background;
-        border: 2px solid @focused;
-}
+        #workspaces button {
+            color: #ff003c;
+        }
 
-    .modules-center {
-        margin: 10px 0 0 0;
-        padding: 0 10px 0 10px;
-        background-color: @background;
-        border: 2px solid @focused;
-}
+        #workspaces button.active {
+            color: #00f0ff;
+        }
 
-    .modules-right {
-        margin: 10px 10px 0 0;
-        padding: 0 10px 0 10px;
-        background-color: @background;
-        border: 2px solid @focused;
-}
-
-    tooltip {
-      background: ${background_1};
-      border: 1px solid ${border_color};
-    }
-    tooltip label {
-      margin: 5px;
-      color: ${text_color};
-    }
-
-    #workspaces {
-      padding-left: 15px;
-    }
-    #workspaces button {
-      color: ${yellow};
-      padding-left:  5px;
-      padding-right: 5px;
-      margin-right: 10px;
-    }
-    #workspaces button.empty {
-      color: ${text_color};
-    }
-    #workspaces button.active {
-      color: ${orange_bright};
-    }
-
-    #clock {
-      color: ${text_color};
-    }
-
-    #tray {
-      margin-left: 10px;
-      color: ${text_color};
-    }
-    #tray menu {
-      background: ${background_1};
-      border: 1px solid ${border_color};
-      padding: 8px;
-    }
-    #tray menuitem {
-      padding: 1px;
-    }
-
-    #pulseaudio, #network, #cpu, #memory, #disk, #battery, #language, #custom-notification, #custom-power-menu {
-      padding-left: 5px;
-      padding-right: 5px;
-      margin-right: 10px;
-      color: ${text_color};
-    }
-
-    #pulseaudio, #language, #custom-notification {
-      margin-left: 15px;
-    }
-
-    #custom-power-menu {
-      padding-right: 2px;
-      margin-right: 5px;
-    }
-
-    #custom-launcher {
-      font-size: 20px;
-      color: ${text_color};
-      font-weight: bold;
-      margin-left: 15px;
-      padding-right: 10px;
-    }
-  '';
+        #workspaces button.urgent {
+            color: #fcee09;
+        }
+              
+        #battery.warning,
+        #network.disconnected,
+        #battery.critical:not(.charging) {
+            color: #fcee09;
+            background-color: transparent;
+            animation-name: blink;
+            animation-duration: 0.5s;
+            animation-timing-function: steps(12);
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+         
+        @keyframes blink {
+            to {
+                background-color: #ffffff;
+                color: #000000;
+            }
+        }
+            
+        label:focus {
+            background-color: #000000;
+        }
+        /* ╔══════════════════════════════════╗
+           ║     Custom Media (e.g. Spotify)  ║
+           ╚══════════════════════════════════╝ */
+            
+        #custom-media {
+            background-color: #66cc99;
+            color: #2a5c45;
+            min-width: 100px;
+        }
+        #custom-media.custom-spotify {
+            background-color: #66cc99;
+        }
+        #custom-media.custom-vlc {
+            background-color: #ffa000;
+        }
+        #custom-notification {
+            padding: 0 15px;
+        }
+        #tray {
+            margin-left: 10px;
+        }
+        #tray menu {
+            padding: 8px;
+        }
+        #tray menuitem {
+            padding: 1px;
+        }
+    '';
 }

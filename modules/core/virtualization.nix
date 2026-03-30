@@ -1,7 +1,7 @@
 { pkgs, username, ... }:
 {
   virtualisation.virtualbox.host = { # virtualbox
-    enable = true;
+    enable = false;
     enableKvm = true;
     addNetworkInterface = false;
   };
