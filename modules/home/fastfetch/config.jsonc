@@ -17,7 +17,7 @@
     { "type": "gpu", "key": "│ ├󰍛 GPU", "keyColor": "cyan" },
     { "type": "memory", "key": "│ ├󰍛 Memory", "keyColor": "cyan" },
     { "type": "disk", "key": "│ ├󰍛 Disk", "keyColor": "cyan" },
-    { "type": "battery", "key": "└ └󰍛 Battery", "keyColor": "cyan" },
+    { "type": "battery", "key": "│ └󰍛 Battery", "keyColor": "cyan" },
     {
       "type": "custom",
       "format": "└──────────────────────────────────────────────────────┘",
