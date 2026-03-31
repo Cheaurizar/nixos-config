@@ -44,8 +44,9 @@
 
     # No gaps when only
     workspace = [
-      "w[tv1], gapsout:0, gapsin:0"
-      "f[1], gapsout:0, gapsin:0"
-    ];
+        "w[t1], gapsout:10, gapsin:0"
+        "w[tg1], gapsout:10, gapsin:0"
+        "f[1], gapsout:10, gapsin:0"
+      ];
   };
 }

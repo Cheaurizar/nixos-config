@@ -22,12 +22,11 @@
 
     general = {
       layout = "dwindle";
-
       gaps_in = 6;
       gaps_out = 12;
       border_size = 2;
 
-      "col.active_border" = "rgb(98971A) rgb(CC241D) 45deg";
+      "col.active_border" = "rgba(ff00ffff) rgba(00ffffee) 45deg";
       "col.inactive_border" = "0x00000000";
     };
 
@@ -52,7 +51,7 @@
     };
 
     decoration = {
-      rounding = 0;
+      rounding = 20;
 
       blur = {
         enabled = true;
