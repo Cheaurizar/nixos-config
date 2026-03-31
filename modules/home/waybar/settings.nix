@@ -109,7 +109,7 @@ in
         on-click = "pavucontrol";
     };
     battery = {
-        format = "{icon}</span> {capacity}%";
+        format = "{icon} {capacity}%";
         format-icons = [
             " "
             " "
