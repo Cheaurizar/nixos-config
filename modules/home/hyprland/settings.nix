@@ -51,7 +51,7 @@
     };
 
     decoration = {
-      rounding = 20;
+      rounding = 0;
 
       blur = {
         enabled = true;

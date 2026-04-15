@@ -70,7 +70,7 @@
       "$ALT, E, workspace, 3"
       "$ALT, R, workspace, 4"
       "$ALT, X, workspace, 5"
-      "$ALT, 6, workspace, 6"
+      "$ALT, Y, workspace, 6"
       "$ALT, 7, workspace, 7"
       "$ALT, 8, workspace, 8"
       "$ALT, 9, workspace, 9"

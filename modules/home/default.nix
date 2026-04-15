@@ -2,7 +2,7 @@
 {
   imports = [
     ./audacious/audacious.nix         # music player
-    ./browser.nix                     # firefox based browser
+    ./browser.nix                     # browser
     ./btop.nix                        # resouces monitor 
     ./cava.nix                        # audio visualizer
     ./discord.nix                     # discord
@@ -20,7 +20,6 @@
     ./rofi/rofi.nix                   # launcher
     ./../../scripts/scripts.nix       # personal scripts
     ./ssh.nix                         # ssh config
-    # ./spicetify.nix                   # spotify client
     # ./superfile/superfile.nix         # terminal file manager
     ./swaylock.nix                    # lock screen
     ./swayosd.nix                     # brightness / volume wiget
@@ -32,6 +31,8 @@
     ./protonmail.nix		      # mail app
     ./obsidian.nix                    # APP de prise de note
     ./okular.nix
-    ./celeste.nix
+    ./spotify.nix
+    ./texstudio.nix                   # APP pour faire des documents en Latex
+    ./snx.nix
   ];
 }
