@@ -3,7 +3,6 @@
   home.packages = with pkgs; [
     ## Better core utils
     duf                               # disk information
-    eza                               # ls replacement
     fd                                # find replacement
     gping                             # ping with a graph
     gtrash                            # rm replacement, put deleted files in system trash
@@ -12,6 +11,7 @@
     ncdu                              # disk space
     ripgrep                           # grep replacement
     tldr
+    eza
 
     ## Tools / useful cli
     aoc-cli                           # Advent of Code command-line tool
