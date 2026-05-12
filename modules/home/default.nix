@@ -19,6 +19,7 @@
     ./packages                        # other packages
     ./rofi/rofi.nix                   # launcher
     ./../../scripts/scripts.nix       # personal scripts
+    ./tri_downloads.nix               # timer mensuel pour Downloads
     ./ssh.nix                         # ssh config
     # ./superfile/superfile.nix         # terminal file manager
     ./swaylock.nix                    # lock screen

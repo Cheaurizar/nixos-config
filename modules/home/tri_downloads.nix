@@ -4,7 +4,7 @@
     Unit.Description = "Trie les fichiers du dossier Downloads";
     Service = {
       Type = "oneshot";
-      ExecStart = "%h/.nix-profile/bin/script_tri_downloads";
+      ExecStart = "/etc/profiles/per-user/%u/bin/script_tri_downloads";
     };
   };
 
@@ -12,7 +12,7 @@
     Unit.Description = "Lance le tri des Downloads periodiquement";
     Install.WantedBy = [ "timers.target" ];
     Timer = {
-      OnCalendar = "*-*-* *:0/5";
+      OnCalendar = "*-*~01 23:00:00";
       Persistent = true;
     };
   };

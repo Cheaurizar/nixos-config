@@ -156,7 +156,11 @@ programs.git = {
 - Faire un type d'host en plus pour WSL 
 - Inclure ma config Neovim avec Nixvim
 - Faire une config clean de Zsh avec antidote (mettre le ls comme dans mon pc du taff) (alias -g -- -h='-h 2>&1 | bat --language=help --style=plain') alias -g -- --help='--help 2>&1 | bat --language=help --style=plain') (créer una lias pour "mkdir X & cd X
-- Modifier les linkds a la fin du readme
+- Modifier les links a la fin du readme
+- vérfier les scripts existants et enlever ce que je trouve inutile
+- Voir pour faire un fichier qui explique les grands points de l'utilisation de la distribution
+- modifier le code pour que le choix des fonds d'écran ce fasse dans le dossier walpeper dans nixos-config
+- modifier le script d'install pour pas qu'il isntal les wallpaper dans le dossier image de l'user
 
 <!-- Links -->
 

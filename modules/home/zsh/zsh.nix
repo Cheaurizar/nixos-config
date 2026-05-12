@@ -181,4 +181,8 @@
     enable = true;
     enableZshIntegration = true;
   };
+  home.packages = with pkgs; [ 
+    eza
+    bat
+  ];
 }

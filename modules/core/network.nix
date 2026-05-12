@@ -1,5 +1,6 @@
 { pkgs, host, ... }:
 {
+  boot.kernelModules = [ "rndis_host" "cdc_ncm" "cdc_ether" "cdc_subset" ];
   networking = {
     hostName = "${host}";
     networkmanager.enable = true;

@@ -3,6 +3,7 @@
   programs = {
     dconf.enable = true;
     fish.enable = true;
+    zsh.enable = true;
 
     gnupg.agent = {
       enable = true;
