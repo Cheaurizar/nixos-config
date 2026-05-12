@@ -1,87 +1,73 @@
-<h1 align="center">
-   <img src="./.github/assets/logo/nixos-logo.png" width="100px" /> 
-   <br>
-      Frost-Phoenix's Flakes 
-   <br>
-      <img src="./.github/assets/pallet/pallet-0.png" width="600px" /> <br>
+<div align="center">
 
-   <div align="center">
-      <p></p>
-      <div align="center">
-         <a href="https://github.com/Frost-Phoenix/nixos-config/stargazers">
-            <img src="https://img.shields.io/github/stars/Frost-Phoenix/nixos-config?color=FABD2F&labelColor=282828&style=for-the-badge&logo=starship&logoColor=FABD2F">
-         </a>
-         <a href="https://github.com/Frost-Phoenix/nixos-config/">
-            <img src="https://img.shields.io/github/repo-size/Frost-Phoenix/nixos-config?color=B16286&labelColor=282828&style=for-the-badge&logo=github&logoColor=B16286">
-         </a>
-         <a = href="https://nixos.org">
-            <img src="https://img.shields.io/badge/NixOS-unstable-blue.svg?style=for-the-badge&labelColor=282828&logo=NixOS&logoColor=458588&color=458588">
-         </a>
-         <a href="https://github.com/Frost-Phoenix/nixos-config/blob/main/LICENSE">
-            <img src="https://img.shields.io/static/v1.svg?style=for-the-badge&label=License&message=MIT&colorA=282828&colorB=98971A&logo=unlicense&logoColor=98971A&"/>
-         </a>
-      </div>
-      <br>
-   </div>
-</h1>
+<img src="./.github/assets/logo/nixos-logo.png" width="100px" />
+
+# Frost-Phoenix's Flakes
+
+<img src="./.github/assets/pallet/pallet-0.png" width="600px" />
+
+[![Stars](https://img.shields.io/github/stars/Frost-Phoenix/nixos-config?color=FABD2F&labelColor=282828&style=for-the-badge&logo=starship&logoColor=FABD2F)](https://github.com/Frost-Phoenix/nixos-config/stargazers)
+[![Repo size](https://img.shields.io/github/repo-size/Frost-Phoenix/nixos-config?color=B16286&labelColor=282828&style=for-the-badge&logo=github&logoColor=B16286)](https://github.com/Frost-Phoenix/nixos-config/)
+[![NixOS](https://img.shields.io/badge/NixOS-unstable-blue.svg?style=for-the-badge&labelColor=282828&logo=NixOS&logoColor=458588&color=458588)](https://nixos.org)
+[![License](https://img.shields.io/static/v1.svg?style=for-the-badge&label=License&message=MIT&colorA=282828&colorB=98971A&logo=unlicense&logoColor=98971A)](https://github.com/Frost-Phoenix/nixos-config/blob/main/LICENSE)
+
+</div>
 
 ### 🖼️ Gallery
 
-<p align="center">
-   <img src="./.github/assets/screenshots/1.png" style="margin-bottom: 15px;"/> <br>
-   <img src="./.github/assets/screenshots/2.png" style="margin-bottom: 15px;"/> <br>
-   <img src="./.github/assets/screenshots/3.png" style="margin-bottom: 15px;"/> <br>
-   <img src="./.github/assets/screenshots/4.png" style="margin-bottom: 15px;"/> <br>
-   Screenshots last updated <b>2025-12-25</b>
-</p>
+![Screenshot 1](./.github/assets/screenshots/1.png)
+![Screenshot 2](./.github/assets/screenshots/2.png)
+![Screenshot 3](./.github/assets/screenshots/3.png)
+![Screenshot 4](./.github/assets/screenshots/4.png)
 
-<details>
-<summary>
-   Waybar (EXPAND)
-</summary>
-   <img src="./.github/assets/screenshots/waybar.png" style="margin-bottom: 15px;" /> <br>
+Screenshots last updated **2025-12-25**
+
+<details><summary>Waybar (EXPAND)</summary>
+
+![Waybar](./.github/assets/screenshots/waybar.png)
+
 </details>
-<details>
-<summary>
-   Swaylock (EXPAND)
-</summary>
-   <img src="./.github/assets/screenshots/swaylock.png" style="margin-bottom: 15px;" /> <br>
+
+<details><summary>Swaylock (EXPAND)</summary>
+
+![Swaylock](./.github/assets/screenshots/swaylock.png)
+
 </details>
-<details>
-<summary>
-   Hyprlock (EXPAND)
-</summary>
-   <img src="./.github/assets/screenshots/hyprlock.png" style="margin-bottom: 15px;" /> <br>
+
+<details><summary>Hyprlock (EXPAND)</summary>
+
+![Hyprlock](./.github/assets/screenshots/hyprlock.png)
+
 </details>
-<details>
-<summary>
-   Power menu (EXPAND)
-</summary>
-   <img src="./.github/assets/screenshots/power_menu.png" style="margin-bottom: 15px;" /> <br>
+
+<details><summary>Power menu (EXPAND)</summary>
+
+![Power menu](./.github/assets/screenshots/power_menu.png)
+
 </details>
-<details>
-<summary>
-   Launcher (EXPAND)
-</summary>
-   <img src="./.github/assets/screenshots/launcher.png" style="margin-bottom: 15px;" /> <br>
+
+<details><summary>Launcher (EXPAND)</summary>
+
+![Launcher](./.github/assets/screenshots/launcher.png)
+
 </details>
-<details>
-<summary>
-   Wallpapers picker (EXPAND)
-</summary>
-   <img src="./.github/assets/screenshots/wallpaper_picker.png" style="margin-bottom: 15px;" /> <br>
+
+<details><summary>Wallpapers picker (EXPAND)</summary>
+
+![Wallpapers picker](./.github/assets/screenshots/wallpaper_picker.png)
+
 </details>
-<details>
-<summary>
-   Notification (EXPAND)
-</summary>
-   <img src="./.github/assets/screenshots/notification.png" style="margin-bottom: 15px;" /> <br>
+
+<details><summary>Notification (EXPAND)</summary>
+
+![Notification](./.github/assets/screenshots/notification.png)
+
 </details>
-<details>
-<summary>
-   Notification center (EXPAND)
-</summary>
-   <img src="./.github/assets/screenshots/notification_center.png" style="margin-bottom: 15px;" /> <br>
+
+<details><summary>Notification center (EXPAND)</summary>
+
+![Notification center](./.github/assets/screenshots/notification_center.png)
+
 </details>
 
 You can find my previous Catppuccin rice [here](https://github.com/Frost-Phoenix/nixos-config/tree/catppuccin) (outdated).
@@ -104,17 +90,17 @@ You can find my previous Catppuccin rice [here](https://github.com/Frost-Phoenix
 
 ## 📚 Layout
 
--   [flake.nix](flake.nix) Base of the configuration
--   [hosts](hosts) Per-host configurations that contain machine specific configurations
+- [flake.nix](flake.nix) Base of the configuration
+- [hosts](hosts) Per-host configurations that contain machine specific configurations
     - [desktop](hosts/desktop/) Desktop specific configuration
     - [laptop](hosts/laptop/) Laptop specific configuration
     - [vm](hosts/vm/) VM specific configuration
--   [modules](modules) Modularized NixOS configurations
-    -   [core](modules/core/) Core NixOS configuration
-    -   [homes](modules/home/) My [Home-Manager](https://github.com/nix-community/home-manager) configuration
--   [pkgs](pkgs) Custom packages build from source
--   [scripts](scripts) Custom shell scripts
--   [wallpapers](wallpapers/) Wallpapers collection
+- [modules](modules) Modularized NixOS configurations
+    - [core](modules/core/) Core NixOS configuration
+    - [homes](modules/home/) My [Home-Manager](https://github.com/nix-community/home-manager) configuration
+- [pkgs](pkgs) Custom packages build from source
+- [scripts](scripts) Custom shell scripts
+- [wallpapers](wallpapers/) Wallpapers collection
 
 ## 🛠️ System Components & Applications
 
@@ -169,7 +155,7 @@ All of the scripts are in the [`./scripts/scripts/`](./scripts/scripts/) folder 
 Shell scripts are automatically discovered and exported as standalone packages. The package name becomes the script base name without its extension (i.e., `ascii.sh` will become the `ascii` command).
 
 **Note:** Scripts must have names that end with `.sh` and be tracked by git to be automatically detected.
- 
+
 **Since scripts are exposed as packages, you can**:
 - Run them directly from the terminal (e.g., `ascii`)
 - Bind them to keybindings (see [binds.nix](./modules/home/hyprland/binds.nix) for examples)
@@ -193,7 +179,7 @@ scripts/
 
 ## ⌨️ Keybinds
 
-Keybindings are defined in [`binds.nix`](./modules/home/hyprland/binds.nix). 
+Keybindings are defined in [`binds.nix`](./modules/home/hyprland/binds.nix).
 
 **Quick access:** Press `$mod F1` to view all keybinds.
 
@@ -267,6 +253,7 @@ Some manual configuration is still required:
 - **Browser**: Configure your browser extensions, settings, etc. (for now, all browser configuration is done manually)
 - **Aseprite Themes**: Import themes from aseprite [themes folder](./modules/home/aseprite/themes/)
 - **Git Identity**: Update the [git.nix](./modules/home/git.nix) file with your name and email
+
 ```nix
 programs.git = {
    ...
@@ -301,16 +288,15 @@ Other dotfiles that I ~~copied~~ learned from:
 
 This project is licensed under the **MIT License** - see the [LICENSE](./LICENSE) file for details.
 
-<!-- # ✨ Stars History
+<!-- # ✨ Stars History -->
+<!-- ![Star History](https://api.star-history.com/svg?repos=frost-phoenix/nixos-config&type=Timeline&theme=dark) -->
 
-<p align="center"><img src="https://api.star-history.com/svg?repos=frost-phoenix/nixos-config&type=Timeline&theme=dark" /></p> -->
+<div align="center">
 
-<p align="center"><img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/footers/gray0_ctp_on_line.svg?sanitize=true" /></p>
+![Footer](https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/footers/gray0_ctp_on_line.svg?sanitize=true)
 
-<!-- end of page, send back to the top -->
+[Back to the Top](#readme)
 
-<div align="right">
-  <a href="#readme">Back to the Top</a>
 </div>
 
 <!-- Links -->
@@ -327,7 +313,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](./LICENSE
 [Hyprlock]: https://github.com/hyprwm/hyprlock
 [audacious]: https://audacious-media-player.org/
 [mpv]: https://github.com/mpv-player/mpv
-[VSCodium]:https://vscodium.com/
+[VSCodium]: https://vscodium.com/
 [Neovim]: https://github.com/neovim/neovim
 [grimblast]: https://github.com/hyprwm/contrib
 [imv]: https://sr.ht/~exec64/imv/
