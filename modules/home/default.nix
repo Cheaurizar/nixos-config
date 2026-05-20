@@ -13,7 +13,6 @@
     ./gtk.nix                         # gtk theme
     ./hyprland                        # window manager
     ./kitty.nix                       # terminal
-    ./lazygit.nix
     ./nemo.nix                        # file manager
     ./nvim.nix                        # neovim editor
     ./packages                        # other packages
