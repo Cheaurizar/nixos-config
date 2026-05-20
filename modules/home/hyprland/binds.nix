@@ -38,8 +38,8 @@
 
       # screenshot
       ",Print, exec, screenshot --copy"
-      "$mod, Print, exec, screenshot --save"
-      "$mod SHIFT, Print, exec, screenshot --swappy"
+      "$mod, O, exec, screenshot --save"
+      "$mod SHIFT, O, exec, screenshot --swappy"
 
       # switch focus
       "$mod, left,  movefocus, l"

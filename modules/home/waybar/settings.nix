@@ -36,7 +36,7 @@ let
     "^kitty:(.*)$"          = "";
     "^vesktop:(.*)$"        = "󰙯";
     "^electron:(.*)$"       = "󱓧";
-    
+    "^steam:(.*)$"          = "";
   };
   separate-outputs = true;
   max-length = 60;

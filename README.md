@@ -161,6 +161,7 @@ programs.git = {
 - Voir pour faire un fichier qui explique les grands points de l'utilisation de la distribution
 - modifier le code pour que le choix des fonds d'écran ce fasse dans le dossier walpeper dans nixos-config
 - modifier le script d'install pour pas qu'il isntal les wallpaper dans le dossier image de l'user
+- https://www.nerdfonts.com/cheat-sheet
 
 <!-- Links -->
 
