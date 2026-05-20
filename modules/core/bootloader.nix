@@ -1,28 +1,9 @@
 { pkgs, config, ... }:
 {
   boot = {
-
-    # =========================================================
-    # BOOTLOADER
-    # C'est le programme qui démarre NixOS au lancement du PC.
-    # systemd-boot est un bootloader simple intégré à NixOS.
-    # =========================================================
     loader = {
-
-      # Active le bootloader systemd-boot.
-      # Si tu veux utiliser GRUB à la place, mets "false" ici
-      # et ajoute : boot.loader.grub.enable = true;
       systemd-boot.enable = true;
-
-      # Autorise NixOS à modifier les variables EFI de ta carte mère.
-      # Nécessaire pour que le boot fonctionne correctement sur la plupart des PCs.
-      # À mettre sur "false" uniquement si ta carte mère pose des problèmes avec ça.
       efi.canTouchEfiVariables = true;
-
-      # Nombre maximum de générations NixOS gardées dans le menu de boot.
-      # Chaque "sudo nixos-rebuild switch" crée une nouvelle génération.
-      # Si tu mets une valeur plus grande, tu peux revenir plus loin en arrière.
-      # Si tu mets une valeur plus petite (ex: 3), tu économises de l'espace disque.
       systemd-boot.configurationLimit = 10;
     };
 
