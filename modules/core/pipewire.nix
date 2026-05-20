@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
   services.pulseaudio.enable = false;
-  security.rtkit.enable = true;
+  security.rtkit.enable = true;  
   services.pipewire = {
     enable = true;
     alsa.enable = true;
@@ -11,7 +11,7 @@
   };
   hardware.alsa.enablePersistence = true;
   environment.systemPackages = with pkgs; [ 
-    pavucontrol
-    crosspipe
+    pavucontrol #volume control
+    crosspipe # mapping of input/output sound
   ];
 }
