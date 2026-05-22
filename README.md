@@ -152,7 +152,6 @@ programs.git = {
 - mettre le fastfetch cyberpunk dès que j'ouvre un terminal comme sur mon laptop
 - voir pour le racourci pour gérer les notifications
 - voir pour permettre au destop et laptop d'avoir des modules de home en commun ça doit être possible juste en créer un sous fichier onlylaptop et le mettre en appel dans laptop
-- Peut être enlever l'alias qui fait que cat -> bat et juste écrire bat quand je veux bat et garder cat pour quand j'en ai besoin
 - Faire un type d'host en plus pour WSL 
 - Inclure ma config Neovim avec Nixvim
 - Faire une config clean de Zsh avec antidote (mettre le ls comme dans mon pc du taff) (alias -g -- -h='-h 2>&1 | bat --language=help --style=plain') alias -g -- --help='--help 2>&1 | bat --language=help --style=plain') (créer una lias pour "mkdir X & cd X
