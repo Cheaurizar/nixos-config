@@ -34,5 +34,6 @@
     ./spotify.nix
     ./texstudio.nix                   # APP pour faire des documents en Latex
     ./snx.nix
+    ./starship.nix                    # Shell Prompt
   ];
 }

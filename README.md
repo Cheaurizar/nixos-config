@@ -162,6 +162,7 @@ programs.git = {
 - modifier le script d'install pour pas qu'il isntal les wallpaper dans le dossier image de l'user
 - https://www.nerdfonts.com/cheat-sheet
 - Refracor pour les couleurs soit communes a tous les fichier 
+- Voir pour que ça soit dans le shell prompt ou dans mon IDE d'avoir les chemins dont les couleurs des caractère alterne pour les dossier Pour que mon cerveau voit les différentes parties du chemin instatanément
 
 <!-- Links -->
 
