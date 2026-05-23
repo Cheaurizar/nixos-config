@@ -161,6 +161,7 @@ programs.git = {
 - modifier le code pour que le choix des fonds d'écran ce fasse dans le dossier walpeper dans nixos-config
 - modifier le script d'install pour pas qu'il isntal les wallpaper dans le dossier image de l'user
 - https://www.nerdfonts.com/cheat-sheet
+- Refracor pour les couleurs soit communes a tous les fichier 
 
 <!-- Links -->
 
