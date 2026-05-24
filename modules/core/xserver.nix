@@ -4,8 +4,8 @@
     xserver = {
       enable = true;
       xkb.layout = "us,fr";
+      videoDrivers = [ "nvidia" ];
     };
-
     displayManager.autoLogin = {
       enable = true;
       user = "${username}";
@@ -14,6 +14,13 @@
       enable = true;
     };
   };
+
+  hardware.nvidia = {
+    modesetting.enable = true;
+    open = false;
+    nvidiaSettings = true;
+  };
+
   # To prevent getting stuck at shutdown
   systemd.settings.Manager.DefaultTimeoutStopSec = "10s";
 }

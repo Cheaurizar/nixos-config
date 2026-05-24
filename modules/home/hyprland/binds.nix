@@ -19,7 +19,6 @@
       "$mod SHIFT, F, fullscreen, 1"
       "$mod, Space, exec, toggle-float"
       "$mod, SUPER_L, exec, toggle-rofi rofi -show drun"
-      "$mod SHIFT, D, exec, vesktop --enable-features=UseOzonePlatform --ozone-platform=wayland"
       "$mod SHIFT, S, exec, hyprctl dispatch exec '[workspace 5 silent] SoundWireServer'"
       "$mod, Escape, exec, swaylock"
       "ALT, Escape, exec, hyprlock"
@@ -39,8 +38,8 @@
 
       # screenshot
       ",Print, exec, screenshot --copy"
-      "$mod, Print, exec, screenshot --save"
-      "$mod SHIFT, Print, exec, screenshot --swappy"
+      "$mod, O, exec, screenshot --save"
+      "$mod SHIFT, O, exec, screenshot --swappy"
 
       # switch focus
       "$mod, left,  movefocus, l"
@@ -70,24 +69,24 @@
       "$ALT, E, workspace, 3"
       "$ALT, R, workspace, 4"
       "$ALT, X, workspace, 5"
-      "$ALT, Y, workspace, 6"
-      "$ALT, 7, workspace, 7"
-      "$ALT, 8, workspace, 8"
-      "$ALT, 9, workspace, 9"
-      "$ALT, 0, workspace, 10"
+      "$ALT, Q, workspace, 6"
+      "$ALT, S, workspace, 7"
+      "$ALT, D, workspace, 8"
+      "$ALT, F, workspace, 9"
+      "$ALT, C, workspace, 10"
 
       # same as above, but switch to the workspace
-      "$mod SHIFT, A, movetoworkspacesilent, 1" # movetoworkspacesilent
-      "$mod SHIFT, Z, movetoworkspacesilent, 2"
-      "$mod SHIFT, E, movetoworkspacesilent, 3"
-      "$mod SHIFT, R, movetoworkspacesilent, 4"
-      "$mod SHIFT, X, movetoworkspacesilent, 5"
-      "$mod SHIFT, 6, movetoworkspacesilent, 6"
-      "$mod SHIFT, 7, movetoworkspacesilent, 7"
-      "$mod SHIFT, 8, movetoworkspacesilent, 8"
-      "$mod SHIFT, 9, movetoworkspacesilent, 9"
-      "$mod SHIFT, 0, movetoworkspacesilent, 10"
-      "$mod CTRL, c, movetoworkspace, empty"
+      "$ALT SHIFT, A, movetoworkspacesilent, 1" # movetoworkspacesilent
+      "$ALT SHIFT, Z, movetoworkspacesilent, 2"
+      "$ALT SHIFT, E, movetoworkspacesilent, 3"
+      "$ALT SHIFT, R, movetoworkspacesilent, 4"
+      "$ALT SHIFT, X, movetoworkspacesilent, 5"
+      "$ALT SHIFT, Q, movetoworkspacesilent, 6"
+      "$ALT SHIFT, S, movetoworkspacesilent, 7"
+      "$ALT SHIFT, D, movetoworkspacesilent, 8"
+      "$ALT SHIFT, F, movetoworkspacesilent, 9"
+      "$ALT SHIFT, C, movetoworkspacesilent, 10"
+      "$ALT CTRL, c, movetoworkspace, empty"
 
       # window control
       "$mod SHIFT, left, movewindow, l"

@@ -13,12 +13,12 @@
     ./gtk.nix                         # gtk theme
     ./hyprland                        # window manager
     ./kitty.nix                       # terminal
-    ./lazygit.nix
     ./nemo.nix                        # file manager
     ./nvim.nix                        # neovim editor
     ./packages                        # other packages
     ./rofi/rofi.nix                   # launcher
     ./../../scripts/scripts.nix       # personal scripts
+    ./tri_downloads.nix               # timer mensuel pour Downloads
     ./ssh.nix                         # ssh config
     # ./superfile/superfile.nix         # terminal file manager
     ./swaylock.nix                    # lock screen
@@ -34,5 +34,6 @@
     ./spotify.nix
     ./texstudio.nix                   # APP pour faire des documents en Latex
     ./snx.nix
+    ./starship.nix                    # Shell Prompt
   ];
 }

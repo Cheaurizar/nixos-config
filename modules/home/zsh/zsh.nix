@@ -12,11 +12,11 @@
         name = "fzf-tab";
         src = "${pkgs.zsh-fzf-tab}/share/fzf-tab";
       }
-      {
-        name = "powerlevel10k";
-        src = pkgs.zsh-powerlevel10k;
-        file = "share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
-      }
+      #{
+      #  name = "powerlevel10k";
+      #  src = pkgs.zsh-powerlevel10k;
+      #  file = "share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
+      #}
       {
         name = "zsh-autopair";
         src = "${pkgs.zsh-autopair}/share/zsh/zsh-autopair";
@@ -134,7 +134,8 @@
       setopt hist_expire_dups_first
       setopt hist_verify
 
-      source ~/.p10k.zsh
+      #source ~/.p10k.zsh
+      eval "$(starship init zsh)"
 
       # Use fd (https://github.com/sharkdp/fd) for listing path candidates.
       # - The first argument to the function ($1) is the base path to start traversal
@@ -181,4 +182,8 @@
     enable = true;
     enableZshIntegration = true;
   };
+  home.packages = with pkgs; [ 
+    eza
+    bat
+  ];
 }
