@@ -3,14 +3,14 @@
   programs.zsh = {
     shellAliases = {
       # Utils
-      ls = "eza --icons -la";
       c = "clear";
       cd = "z";
       less = "bat";
       dsize = "du -hs";
       man = "batman";
 
-      l = "eza --icons -a --group-directories-first -1 --no-user --long"; # EZA_ICON_SPACING=2
+      ls = "eza --icons --group-directories-first -1 -T -L 2 --no-user --long"; # EZA_ICON_SPACING=2
+      la = "eza --icons --group-directories-first -1 -T -L 2 -a --no-user --long";
     };
   };
 }

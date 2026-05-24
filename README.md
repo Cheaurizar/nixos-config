@@ -163,6 +163,7 @@ programs.git = {
 - https://www.nerdfonts.com/cheat-sheet
 - Refracor pour les couleurs soit communes a tous les fichier 
 - Voir pour que ça soit dans le shell prompt ou dans mon IDE d'avoir les chemins dont les couleurs des caractère alterne pour les dossier Pour que mon cerveau voit les différentes parties du chemin instatanément
+- Peut être voir pour si je fais une config Cyberpunk ou Zelda BOTW
 
 <!-- Links -->
 
