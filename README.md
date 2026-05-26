@@ -140,20 +140,15 @@ programs.git = {
 
 # TODO
 
+- Faire un Ricing Zelda BOTW
 - regarder les alias dans git.nix
 - modifier la font utilisé dans le readme
-- créer une branche pour la version portable de la config nix
-- modifier la config hyprland pour que ça marche avec un seul écran j'ai pas envie d'avoir d'écran double
-- passer sous starship avec le fichier que de mon taff
 - modifier l'icone dans la waybar dans le cas ou il y a pas de fenetres actif
 - remplacer winewowpackages par winewow64packages
-- Modifier ROFI pour être dans le style cyberpunk
-- continuer l'edit cyberpunk
 - mettre le fastfetch cyberpunk dès que j'ouvre un terminal comme sur mon laptop
 - voir pour le racourci pour gérer les notifications
 - voir pour permettre au destop et laptop d'avoir des modules de home en commun ça doit être possible juste en créer un sous fichier onlylaptop et le mettre en appel dans laptop
 - Faire un type d'host en plus pour WSL 
-- Inclure ma config Neovim avec Nixvim
 - Faire une config clean de Zsh avec antidote (mettre le ls comme dans mon pc du taff) (alias -g -- -h='-h 2>&1 | bat --language=help --style=plain') alias -g -- --help='--help 2>&1 | bat --language=help --style=plain') (créer una lias pour "mkdir X & cd X
 - Modifier les links a la fin du readme
 - vérfier les scripts existants et enlever ce que je trouve inutile
@@ -163,7 +158,7 @@ programs.git = {
 - https://www.nerdfonts.com/cheat-sheet
 - Refracor pour les couleurs soit communes a tous les fichier 
 - Voir pour que ça soit dans le shell prompt ou dans mon IDE d'avoir les chemins dont les couleurs des caractère alterne pour les dossier Pour que mon cerveau voit les différentes parties du chemin instatanément
-- Peut être voir pour si je fais une config Cyberpunk ou Zelda BOTW
+- accelerer le process des commits avec LLM voir pour soit utiliser code claude pour que ça soit en cli ou faire tourner un modèle en local
 
 <!-- Links -->
 

@@ -164,22 +164,19 @@
       {
         mode = "n";
         key = "<leader>ca";
-        action = "vim.lsp.buf.code_action";
-        lua = true;
+        action.__raw = "vim.lsp.buf.code_action";
         options.desc = "Code action LSP";
       }
       {
         mode = "n";
         key = "gd";
-        action = "vim.lsp.buf.definition";
-        lua = true;
+        action.__raw = "vim.lsp.buf.definition";
         options.desc = "Aller à la définition";
       }
       {
         mode = "n";
         key = "K";
-        action = "vim.lsp.buf.hover";
-        lua = true;
+        action.__raw = "vim.lsp.buf.hover";
         options.desc = "Documentation LSP";
       }
     ];
