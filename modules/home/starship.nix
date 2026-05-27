@@ -9,7 +9,8 @@ let
     color_red = "#CC0000";
     color_pink = "#FF0055";
     color_white = "#FFFFFF";
-    color_cyan = "#0000AA";
+    color_cyan = "#15c3cb";
+    color_yellow = "#8888000";
   };
 
   defaultFg = "color_fgw";
@@ -23,7 +24,7 @@ let
 
   # Segments de droite : affichés dans l'ordre, séparateurs pointant vers la gauche
   rightSegments = [
-    { bg = "color_pink"; fg = "color_fgw"; modules = [ "python" "container" ]; }
+    { bg = "color_cyan"; fg = "color_fgw"; modules = [ "python" "container" "nix_shell"]; }
     { bg = "color_bg1";  fg = "color_fgw"; modules = [ "time" ]; }
   ];
 
@@ -118,6 +119,14 @@ in
       python = {
         style = styleOfModule "python";
         format = "[(\\($virtualenv\\)) ]($style)";
+      };
+      
+      nix_shell = {
+        style = styleOfModule "nix_shell";
+        format = "[ $state( \($name\ ))]($style)";
+        impure_msg = "[I](fg:color_red)";
+        pure_msg = "[P](fg:color_green)";
+        unknown_msg = "[?](fg:color_yellow)";
       };
 
       time = {
