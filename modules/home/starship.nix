@@ -10,7 +10,7 @@ let
     color_pink = "#FF0055";
     color_white = "#FFFFFF";
     color_cyan = "#15c3cb";
-    color_yellow = "#8888000";
+    color_yellow = "#888800";
   };
 
   defaultFg = "color_fgw";
