@@ -17,25 +17,52 @@ let
 
   # Segments de gauche : affichés dans l'ordre, séparateurs pointant vers la droite
   leftSegments = [
-    { bg = "color_red";   fg = "color_fgw"; modules = [ "directory" ]; }
-    { bg = "color_green"; fg = "color_fgb"; modules = [ "cmd_duration" ]; }
-    { bg = "color_blue";  fg = "color_fgw"; modules = [ "git_branch" "git_status" ]; }
+    {
+      bg = "color_red";
+      fg = "color_fgw";
+      modules = [ "directory" ];
+    }
+    {
+      bg = "color_green";
+      fg = "color_fgb";
+      modules = [ "cmd_duration" ];
+    }
+    {
+      bg = "color_blue";
+      fg = "color_fgw";
+      modules = [
+        "git_branch"
+        "git_status"
+      ];
+    }
   ];
 
   # Segments de droite : affichés dans l'ordre, séparateurs pointant vers la gauche
   rightSegments = [
-    { bg = "color_cyan"; fg = "color_fgw"; modules = [ "python" "container" "nix_shell"]; }
-    { bg = "color_bg1";  fg = "color_fgw"; modules = [ "time" ]; }
+    {
+      bg = "color_cyan";
+      fg = "color_fgw";
+      modules = [
+        "python"
+        "container"
+        "nix_shell"
+      ];
+    }
+    {
+      bg = "color_bg1";
+      fg = "color_fgw";
+      modules = [ "time" ];
+    }
   ];
 
   # Tous les segments réunis, pour que styleOfModule fonctionne quel que soit le côté
   segments = leftSegments ++ rightSegments;
 
   # Séparateurs powerline
-  sepLeftFilled  = "";   # triangle plein pointant à droite (ouvre un segment à gauche)
-  sepLeftEnd     = "";   # triangle plein pointant à droite (ferme un segment à gauche)
-  sepRightStart  = "";   # triangle plein pointant à gauche (ouvre un segment à droite)
-  sepRightEnd    = "";   # triangle plein pointant à gauche (ferme un segment à droite)
+  sepLeftFilled = ""; # triangle plein pointant à droite (ouvre un segment à gauche)
+  sepLeftEnd = ""; # triangle plein pointant à droite (ferme un segment à gauche)
+  sepRightStart = ""; # triangle plein pointant à gauche (ouvre un segment à droite)
+  sepRightEnd = ""; # triangle plein pointant à gauche (ferme un segment à droite)
 
   neutral = "color_white";
 
@@ -48,14 +75,16 @@ let
   modulesStr = seg: builtins.concatStringsSep "" (map (m: "$" + m) seg.modules);
 
   # Segment gauche : triangle droite, contenu, triangle droite
-  buildLeftSegment = seg:
-    ''[${sepLeftFilled}](fg:${neutral} bg:${seg.bg})${modulesStr seg}[${sepLeftEnd}](fg:${seg.bg} bg:${neutral})'';
+  buildLeftSegment =
+    seg:
+    "[${sepLeftFilled}](fg:${neutral} bg:${seg.bg})${modulesStr seg}[${sepLeftEnd}](fg:${seg.bg} bg:${neutral})";
 
   # Segment droit : triangle gauche, contenu, triangle gauche
-  buildRightSegment = seg:
-    ''[${sepRightStart}](fg:${seg.bg} bg:${neutral})${modulesStr seg}[${sepRightEnd}](fg:${neutral} bg:${seg.bg})'';
+  buildRightSegment =
+    seg:
+    "[${sepRightStart}](fg:${seg.bg} bg:${neutral})${modulesStr seg}[${sepRightEnd}](fg:${neutral} bg:${seg.bg})";
 
-  leftBody  = builtins.concatStringsSep "" (map buildLeftSegment  leftSegments);
+  leftBody = builtins.concatStringsSep "" (map buildLeftSegment leftSegments);
   rightBody = builtins.concatStringsSep "" (map buildRightSegment rightSegments);
 
   # $fill étire un caractère sur toute la largeur dispo entre gauche et droite
@@ -68,7 +97,7 @@ let
     + rightBody
     + "[${sepRightEnd}](fg:color_bg1 bg:${neutral})"
     + "$line_break"
-    + "[${sepLeftFilled}](fg:${neutral})";
+    + "$character";
 in
 {
   programs.starship = {
@@ -120,7 +149,7 @@ in
         style = styleOfModule "python";
         format = "[(\\($virtualenv\\)) ]($style)";
       };
-      
+
       nix_shell = {
         style = styleOfModule "nix_shell";
         format = "[ $state( \($name\ ))]($style)";
@@ -142,6 +171,11 @@ in
         show_milliseconds = true;
         style = styleOfModule "cmd_duration";
         format = "[ $duration ]($style)";
+      };
+
+      character = {
+        success_symbol = "[❯](fg:color_green)";
+        error_symbol = "[❯](fg:color_red)";
       };
     };
   };
