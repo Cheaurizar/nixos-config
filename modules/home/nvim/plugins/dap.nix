@@ -5,9 +5,15 @@
     plugins.dap = {
       enable = true;
       extensions = {
+        # Python
         dap-python = {
           enable = true;
           adapterPythonPath = "python3";
+        };
+
+        # Rust
+        dap-lldb = {
+          enable = true;
         };
         dap-ui.enable = true;
         dap-virtual-text.enable = true;

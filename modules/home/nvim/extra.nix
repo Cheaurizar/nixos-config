@@ -2,7 +2,6 @@
 
 {
   programs.nixvim = {
-    # Paquets supplémentaires nécessaires
     extraPackages = with pkgs; [
       # Formatteurs Python
       black
@@ -15,7 +14,7 @@
       texlive.combined.scheme-medium
       zathura
       # DAP pour Rust (via codelldb)
-      lldb
+      lldb # débogueur Rust/C/C++
     ];
 
     # Config Lua supplémentaire
