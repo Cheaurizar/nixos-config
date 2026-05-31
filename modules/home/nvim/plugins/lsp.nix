@@ -6,10 +6,11 @@
     lsp = {
       enable = true;
       servers = {
-        nil_ls.enable = true;
-        lua_ls.enable = true;
-        pyright.enable = true;
+        nil_ls.enable = true; # Nix
+        lua_ls.enable = true; # Lua
+        pyright.enable = true; # Python
         rust_analyzer = {
+          # Rust
           enable = true;
           installCargo = true;
           installRustc = true;
