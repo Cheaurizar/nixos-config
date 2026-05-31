@@ -15,7 +15,7 @@
       # Explorateur de fichiers
       nvim-tree = {
         enable = true;
-        view.width = 35;
+        settings.view.width = 35;
       };
 
       # Recherche de fichiers / grep

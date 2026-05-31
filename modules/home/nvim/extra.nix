@@ -7,7 +7,7 @@
       black
       ruff
       # Formatteur Nix
-      nixfmt-rfc-style
+      nixfmt
       # Formatteur Lua
       stylua
       # LaTeX
