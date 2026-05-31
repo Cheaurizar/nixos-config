@@ -139,7 +139,6 @@ programs.git = {
 - voir pour le racourci pour gérer les notifications
 - voir pour permettre au destop et laptop d'avoir des modules de home en commun ça doit être possible juste en créer un sous fichier onlylaptop et le mettre en appel dans laptop
 - Faire un type d'host en plus pour WSL
-- Faire une config clean de Zsh (alias -g -- -h='-h 2>&1 | bat --language=help --style=plain') alias -g -- --help='--help 2>&1 | bat --language=help --style=plain') (créer una lias pour "mkdir X & cd X
 - Modifier les links a la fin du readme
 - vérfier les scripts existants et enlever ce que je trouve inutile
 - Voir pour faire un fichier qui explique les grands points de l'utilisation de la distribution
@@ -152,7 +151,6 @@ programs.git = {
 
 <!-- Links -->
 
-[Hyprland]: https://github.com/hyprwm/Hyprland
 [nemo]: https://github.com/linuxmint/nemo/
 [Swaylock-effects]: https://github.com/mortie/swaylock-effects
 [Hyprlock]: https://github.com/hyprwm/hyprlock
@@ -162,7 +160,6 @@ programs.git = {
 [grimblast]: https://github.com/hyprwm/contrib
 [imv]: https://sr.ht/~exec64/imv/
 [swaync]: https://github.com/ErikReider/SwayNotificationCenter
-[Maple Mono]: https://github.com/subframe7536/maple-font
 [NetworkManager]: https://wiki.gnome.org/Projects/NetworkManager
 [network-manager-applet]: https://gitlab.gnome.org/GNOME/network-manager-applet/
 [wl-clip-persist]: https://github.com/Linus789/wl-clip-persist
