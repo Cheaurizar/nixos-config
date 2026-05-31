@@ -135,10 +135,7 @@ programs.git = {
 
 - Faire un Ricing Zelda BOTW
 - regarder les alias dans git.nix
-- modifier la font utilisé dans le readme
-- modifier l'icone dans la waybar dans le cas ou il y a pas de fenetres actif
-- remplacer winewowpackages par winewow64packages
-- mettre le fastfetch cyberpunk dès que j'ouvre un terminal comme sur mon laptop
+- mettre le fastfetch dès que j'ouvre un terminal comme sur mon laptop
 - voir pour le racourci pour gérer les notifications
 - voir pour permettre au destop et laptop d'avoir des modules de home en commun ça doit être possible juste en créer un sous fichier onlylaptop et le mettre en appel dans laptop
 - Faire un type d'host en plus pour WSL
