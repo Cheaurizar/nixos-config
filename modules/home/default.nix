@@ -36,5 +36,6 @@
     ./snx.nix
     ./starship.nix # Shell Prompt
     ./foliate.nix
+    ./devenv.nix
   ];
 }
