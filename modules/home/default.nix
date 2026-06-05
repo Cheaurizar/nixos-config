@@ -37,5 +37,6 @@
     ./starship.nix # Shell Prompt
     ./foliate.nix
     ./devenv.nix
+    ./osu.nix
   ];
 }
