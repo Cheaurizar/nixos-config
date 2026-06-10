@@ -38,5 +38,6 @@
     ./foliate.nix
     ./devenv.nix
     ./osu.nix
+    ./stirling.nix
   ];
 }
