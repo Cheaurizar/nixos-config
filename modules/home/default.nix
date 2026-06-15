@@ -39,5 +39,6 @@
     ./devenv.nix
     ./osu.nix
     ./stirling.nix
+    ./localsend.nix
   ];
 }
