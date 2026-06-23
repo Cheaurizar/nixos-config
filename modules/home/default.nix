@@ -40,5 +40,6 @@
     ./osu.nix
     ./stirling.nix
     ./localsend.nix
+    ./zathura.nix
   ];
 }
