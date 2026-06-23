@@ -149,6 +149,7 @@ programs.git = {
 - Voir pour que ça soit dans le shell prompt ou dans mon IDE d'avoir les chemins dont les couleurs des caractère alterne pour les dossier Pour que mon cerveau voit les différentes parties du chemin instatanément
 - accelerer le process des commits avec LLM voir pour soit utiliser code claude pour que ça soit en cli ou faire tourner un modèle en local
 - Modifier la waybar pour que la baterrie arrete de briller quand elle est en train de charger même si infèrieur a 25%
+- Vimtex marche pas trop a revoir
 
 <!-- Links -->
 

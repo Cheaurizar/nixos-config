@@ -11,6 +11,16 @@
         settings = {
           view_method = "zathura";
           compiler_method = "latexmk";
+          compiler_latexmk = {
+            options = [
+              "-pdf"
+              "-shell-escape"
+              "-verbose"
+              "-file-line-error"
+              "-synctex=1"
+              "-interaction=nonstopmode"
+            ];
+          };
         };
       };
     };

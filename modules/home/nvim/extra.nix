@@ -11,10 +11,21 @@
       # Formatteur Lua
       stylua
       # LaTeX
-      texlive.combined.scheme-medium
+      (texlive.combine {
+        inherit (texlive)
+          scheme-medium
+          minted
+          fvextra
+          upquote
+          catchfile
+          xstring
+          framed
+          ;
+      })
       zathura
       # DAP pour Rust (via codelldb)
       lldb # débogueur Rust/C/C++
+      xdotool
     ];
 
     # Config Lua supplémentaire
