@@ -41,5 +41,7 @@
     ./stirling.nix
     ./localsend.nix
     ./zathura.nix
+    ./thunderstore.nix
+    ./wootility.nix
   ];
 }
